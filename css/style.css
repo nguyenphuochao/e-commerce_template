@@ -4,12 +4,19 @@ li {
 }
 
 /* Root color */
+.text-red {
+    color: #B22222;
+}
+
 .bg-red {
     background-color: #B22222;
 }
 
-
 /* Top menu */
+.top-menu-desktop {
+    display: flex;
+}
+
 .top-menu input[type=text] {
     width: 470px;
     height: 40px;
@@ -23,11 +30,71 @@ li {
     font-size: 25px;
 }
 
-/* Nav meunu */
-nav ul li a {
+/* Menu desktop */
+nav.nav-desktop {
+    position: sticky;
+    top: 0px;
+    z-index: 100000;
+}
+
+nav.nav-desktop ul li a {
     color: white;
     text-transform: uppercase;
     font-weight: 500;
+    margin: 20px;
+}
+
+nav.nav-desktop ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav.nav-desktop {
+    margin-bottom: -16px;
+}
+
+/* Menu mobile */
+.nav-mobile {
+    display: none;
+}
+
+nav.nav-mobile i.fa-cart-shopping {
+    font-size: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 /* Banner */
@@ -45,15 +112,144 @@ nav ul li a {
     transform: translateY(-50%);
 }
 
-.owl-carousel .owl-next span, .owl-carousel .owl-prev span {
+.owl-carousel .owl-next span,
+.owl-carousel .owl-prev span {
     font-size: 70px;
 }
-/* Component */
-.home-title{
-    text-transform: uppercase;
-    color: #B22222;
-    border: 3px solid grey;
-    display: inline-block;
-    padding: 10px; /* Sử dụng phần trăm để tạo khoảng cách giữa chữ và border */
-    line-height: 1; /* Đảm bảo line-height không tạo ra khoảng cách thêm */
+
+.owl-carousel .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+}
+
+/* Info Company */
+.info-company {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    padding: 15px;
+}
+
+.info-company i {
+    font-size: 33px;
+}
+
+/* List Product */
+.list-product {
+    background-color: #F4F4F4;
+}
+
+.list-product .title,
+.list-news .title {
+    position: relative;
+}
+
+.list-product .title h3,
+.list-news .title h3 {
+    border: 2px solid #9f9b9b;
+    padding: 5px;
+    z-index: 999;
+    background-color: white;
+}
+
+.list-product .title::before,
+.list-news .title::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    width: 68%;
+    border: 1px solid #9f9b9b;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-55%);
+}
+
+.list-product .row .col .product {
+    background-color: white;
+    padding: 15px 10px 25px 10px;
+}
+
+.list-product .products .product a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-product .products .product .text-decoration-line-through {
+    text-decoration: line-through;
+}
+
+
+
+/* Footer */
+footer ul li {
+    list-style: disc;
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer ul li a:hover {
+    color: rgb(167, 161, 161);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #212121;
+    padding: 10px;
+}
+
+.footer-bottom div {
+    color: white;
+    font-size: 14px;
+}
+
+/* Reponsite */
+@media screen and (max-width: 1199px) {
+    .top-menu input[type=text] {
+        width: 382px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .top-menu input[type=text] {
+        width: 185px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .top-menu-desktop {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .list-product .title h3,
+    .list-news .title h3 {
+        font-size: 16px;
+    }
+
+    .list-product .title::before,
+    .list-news .title::before {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
