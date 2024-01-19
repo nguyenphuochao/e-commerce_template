@@ -1,0 +1,12 @@
+.detail .content {
+    background-color: #F5ECCE;
+    padding: 20px;
+    border: 1px dashed red;
+}
+.detail .comment textarea{
+    height: 170px;
+}
+.detail .comment .row{
+    border: 1px solid #ced4da;
+    margin: 0;
+}

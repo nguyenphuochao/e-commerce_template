@@ -1,7 +1,4 @@
 /* Reset css */
-li {
-    list-style-type: none;
-}
 
 /* Root color */
 .text-red {
@@ -10,6 +7,10 @@ li {
 
 .bg-red {
     background-color: #B22222;
+}
+
+.bg-grey {
+    background-color: #F4F4F4;
 }
 
 /* Top menu */
@@ -30,11 +31,43 @@ li {
     font-size: 25px;
 }
 
+.top-menu .contact-phone {
+    cursor: pointer;
+}
+
+.top-menu .dropdown-cart {
+    position: relative;
+}
+
+.top-menu .dropdown-cart .list-cart {
+    position: absolute;
+    z-index: 1000000;
+    left: -228px;
+    width: 322px;
+    padding: 5px;
+    display: none;
+    background-color: white;
+    border: 1px solid rgb(218, 207, 207);
+}
+
+.top-menu .dropdown-cart:hover .list-cart {
+    display: block;
+}
+
+.top-menu .dropdown-cart .list-cart hr {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 /* Menu desktop */
 nav.nav-desktop {
     position: sticky;
     top: 0px;
     z-index: 100000;
+}
+
+nav.nav-desktop ul li {
+    list-style: none;
 }
 
 nav.nav-desktop ul li a {
@@ -115,6 +148,7 @@ nav.nav-mobile i.fa-cart-shopping {
 .owl-carousel .owl-next span,
 .owl-carousel .owl-prev span {
     font-size: 70px;
+    color: white;
 }
 
 .owl-carousel .owl-dots {
@@ -167,6 +201,20 @@ nav.nav-mobile i.fa-cart-shopping {
 .list-product .row .col .product {
     background-color: white;
     padding: 15px 10px 25px 10px;
+    position: relative;
+}
+
+.list-product .row .col .product .discount {
+    position: absolute;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    padding-top: 10px;
+    top: 10px;
+    left: 0px;
 }
 
 .list-product .products .product a {

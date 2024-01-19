@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <!-- Link css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/detail.css">
 </head>
 
 <body>
@@ -93,78 +92,76 @@
             <div><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
     </nav>
-    <!-- Detail -->
-    <div class="detail mb-2 container">
-        <div class="row pt-3">
-            <div class="col-md-5">
-                <img class="img-fluid" src="https://naty.vn/wp-content/uploads/2021/03/meo-than-tai-5-4-768x768.jpg"
-                    alt="">
+    <!-- Cart -->
+    <div class="container mb-2 cart">
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">SẢN PHẨM</th>
+                            <th scope="col">GIÁ</th>
+                            <th scope="col">SỐ LƯỢNG</th>
+                            <th scope="col">TỔNG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">
+                                <img width="100" src="image/product.jpg" alt="">
+                                <span>Mèo thần tài thiên kim vạn lượng 20cm</span>
+                            </td>
+                            <td class="align-middle">699.000 đ</td>
+                            <td class="align-middle"><input type="number" value="1"
+                                    style="width: 50px;text-align: center;"></td>
+                            <td class="align-middle">699.000 đ</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <img width="100" src="image/product.jpg" alt="">
+                                <span>Mèo thần tài thiên kim vạn lượng 20cm</span>
+                            </td>
+                            <td class="align-middle">699.000 đ</td>
+                            <td class="align-middle"><input type="number" value="1"
+                                    style="width: 50px;text-align: center;"></td>
+                            <td class="align-middle">699.000 đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span><a href="index.html" class="border border-danger btn btn-light rounded-0"><i
+                            class="fa-solid fa-arrow-left"></i> TIẾP TỤC XEM SẢN PHẨM</a></span>
+                <span><a href="#" class="btn btn-danger rounded-0">CẬP NHẬT GIỎ HÀNG</a></span>
             </div>
-            <div class="col-md-5">
-                <div class="breadcrum">
-                    <span><a href="#">Trang chủ</a></span> /
-                    <span><a href="#">Mèo Thần Tài</a></span> /
-                    <span><a href="#">Giá < 500k</a></span>
-                </div>
-                <div class="title mt-2">
-                    <h4>Mèo thần tài thiên kim vạn lượng 20cm</h4>
-                </div>
-                <div class="price">
-                    <h5>699.000₫</h5>
-                </div>
-                <div class="content">
-                    <div>– Xuất xứ: Nhật Bản</div>
-                    <div>– Chất liệu: Gốm sứ cao cấp </div>
-                    <div>– Kích thước: 20cm </div>
-                    <div>– Phụ kiện: Dây chuông cổ, pin AA hoặc dây sạc điện, tấm đệm gấm đỏ.</div>
-                    <div>– Ý nghĩa: Tay trái vẫy có dòng chữ “Kim vận phát tài“; Tay phải mèo cầm hũ ngân lượng đầy chữ
-                        “Phát” tượng trưng cho sự giàu có, phát đạt; Trước bụng mèo có 5 chú mèo nhỏ tượng trưng cho
-                        “Ngũ phúc” bao gồm: Thọ – Phú – Khang – Đức – Khảo chung mệnh.</div>
-                </div>
-                <div class="add-to-cart mt-1">
-                    <input type="number" value="1" style="width: 50px;height: 38px;">
-                    <a href="#" class="btn btn-danger rounded-0 mb-1">Mua ngay</a>
-                </div>
-                <div class="buy-now mt-1">
-                    <a href="#" class="btn btn-danger rounded-0 w-100">
-                        ĐẶT MUA NGAY <br>
-                        Nhân viên sẽ xác nhận đơn hàng sớm nhất
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-2 sidebar">
-                Sidebar
-            </div>
-            <div class="col-md-10">
-                <hr>
-                <div class="description">
-                    <h5>Mô tả chi tiết sản phẩm ở đây</h5>
-                </div>
-                <hr>
-                <div class="comment">
-                    <form action="#">
-                        <textarea class="form-control"
-                            placeholder="Mời bạn tham gia bình luận, vui lòng nhập tiếng việt có dấu" name="content"
-                            id="" cols="30" rows="10"></textarea>
-                        <div class="row p-3">
-                            <div class="col-md-3 text-center my-auto">
-                                <input type="radio" name="gender" checked> <strong>Anh</strong>
-                                <input type="radio" name="gender"> <strong>Chị</strong>
-                            </div>
-                            <div class="col-md-4 mt-1">
-                                <input type="text" name="fullname" placeholder="Họ tên (Bắt buộc)" class="form-control">
-                            </div>
-                            <div class="col-md-4 mt-1">
-                                <input type="text" name="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="col-md-1 mt-1">
-                                <button class="btn btn-primary">Gửi</button>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="list-comment mt-2">
-                        <h6>Chưa có bình luận nào</h6>
-                    </div>
+            <div class="col-md-4">
+                <div class="payment">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">CỘNG GIỎ HÀNG</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div>Tạm tính</div>
+                                        <div>999.999 đ</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div>Tổng</div>
+                                        <div>999.999 đ</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="btn btn-danger rounded-0 w-100">TIẾN HÀNH THANH TOÁN</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -207,7 +204,6 @@
         <div>Hotline: 0909 784 262</div>
         <div>©Mèo thần tài Naty.vn</div>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <!-- Link css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/detail.css">
 </head>
 
 <body>
@@ -39,15 +38,25 @@
             <div class="list-cart">
                 <div class="row">
                     <!-- Start cart item -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 mt-2">
                         <img class="img-fluid"
                             src="https://naty.vn/wp-content/uploads/2021/03/meo-may-man-vay-tay-1-300x300.jpg" alt="">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 mt-2">
                         <h6>Mèo thần tài</h6>
                         <h6>1 x 699.999 đ</h6>
                     </div>
-                    <div class="col-md-2"><i class="fa-regular fa-circle-xmark"></i></div>
+                    <div class="col-md-2 mt-2"><i class="fa-regular fa-circle-xmark"></i></div>
+                    <hr class="w-100">
+                    <div class="col-md-3 mt-2">
+                        <img class="img-fluid"
+                            src="https://naty.vn/wp-content/uploads/2021/03/meo-may-man-vay-tay-1-300x300.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 mt-2">
+                        <h6>Mèo thần tài</h6>
+                        <h6>1 x 699.999 đ</h6>
+                    </div>
+                    <div class="col-md-2 mt-2"><i class="fa-regular fa-circle-xmark"></i></div>
                     <!-- End cart item -->
                     <div class="col-md-12 text-center sub-total">
                         <hr>
@@ -93,81 +102,114 @@
             <div><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
     </nav>
-    <!-- Detail -->
-    <div class="detail mb-2 container">
-        <div class="row pt-3">
-            <div class="col-md-5">
-                <img class="img-fluid" src="https://naty.vn/wp-content/uploads/2021/03/meo-than-tai-5-4-768x768.jpg"
-                    alt="">
-            </div>
-            <div class="col-md-5">
-                <div class="breadcrum">
-                    <span><a href="#">Trang chủ</a></span> /
-                    <span><a href="#">Mèo Thần Tài</a></span> /
-                    <span><a href="#">Giá < 500k</a></span>
-                </div>
-                <div class="title mt-2">
-                    <h4>Mèo thần tài thiên kim vạn lượng 20cm</h4>
-                </div>
-                <div class="price">
-                    <h5>699.000₫</h5>
-                </div>
-                <div class="content">
-                    <div>– Xuất xứ: Nhật Bản</div>
-                    <div>– Chất liệu: Gốm sứ cao cấp </div>
-                    <div>– Kích thước: 20cm </div>
-                    <div>– Phụ kiện: Dây chuông cổ, pin AA hoặc dây sạc điện, tấm đệm gấm đỏ.</div>
-                    <div>– Ý nghĩa: Tay trái vẫy có dòng chữ “Kim vận phát tài“; Tay phải mèo cầm hũ ngân lượng đầy chữ
-                        “Phát” tượng trưng cho sự giàu có, phát đạt; Trước bụng mèo có 5 chú mèo nhỏ tượng trưng cho
-                        “Ngũ phúc” bao gồm: Thọ – Phú – Khang – Đức – Khảo chung mệnh.</div>
-                </div>
-                <div class="add-to-cart mt-1">
-                    <input type="number" value="1" style="width: 50px;height: 38px;">
-                    <a href="#" class="btn btn-danger rounded-0 mb-1">Mua ngay</a>
-                </div>
-                <div class="buy-now mt-1">
-                    <a href="#" class="btn btn-danger rounded-0 w-100">
-                        ĐẶT MUA NGAY <br>
-                        Nhân viên sẽ xác nhận đơn hàng sớm nhất
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-2 sidebar">
-                Sidebar
-            </div>
-            <div class="col-md-10">
-                <hr>
-                <div class="description">
-                    <h5>Mô tả chi tiết sản phẩm ở đây</h5>
-                </div>
-                <hr>
-                <div class="comment">
-                    <form action="#">
-                        <textarea class="form-control"
-                            placeholder="Mời bạn tham gia bình luận, vui lòng nhập tiếng việt có dấu" name="content"
-                            id="" cols="30" rows="10"></textarea>
-                        <div class="row p-3">
-                            <div class="col-md-3 text-center my-auto">
-                                <input type="radio" name="gender" checked> <strong>Anh</strong>
-                                <input type="radio" name="gender"> <strong>Chị</strong>
-                            </div>
-                            <div class="col-md-4 mt-1">
-                                <input type="text" name="fullname" placeholder="Họ tên (Bắt buộc)" class="form-control">
-                            </div>
-                            <div class="col-md-4 mt-1">
-                                <input type="text" name="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="col-md-1 mt-1">
-                                <button class="btn btn-primary">Gửi</button>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="list-comment mt-2">
-                        <h6>Chưa có bình luận nào</h6>
+    <!-- Checkout -->
+    <div class="checkout container">
+        <div class="row pt-4">
+            <div class="col-md-7">
+                <h5><strong>Thông tin thanh toán</strong></h5>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="name"><strong>Tên*</strong></label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="last_name"><strong>Họ*</strong></label>
+                        <input type="text" class="form-control" id="last_name">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="address"><strong>Địa chỉ*</strong></label>
+                        <input type="text" class="form-control" placeholder="Địa chỉ" id="address">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="province"><strong>Tỉnh/thành phố*</strong></label>
+                        <input type="text" class="form-control" id="province">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="phone"><strong>Số điện thoại*</strong></label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="email"><strong>Email*</strong></label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5><strong>Thông tin bổ sung</strong></h5>
+                        <label for="note"><strong>Ghi chú đơn hàng (tuỳ chọn)</strong></label>
+                        <textarea name="note" class="form-control" cols="30" rows="5"></textarea>
                     </div>
                 </div>
             </div>
+            <div class="col-md-5">
+                <div class="bills">
+                    <h5>Đơn hàng của bạn</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="d-flex justify-content-between">
+                                        <div>SẢN PHẨM</div>
+                                        <div>TẠM TÍNH</div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">
+                                    <div class="d-flex justify-content-between">
+                                        <div>Mèo thần tài thiên kim vạn lượng 20cm × 2</div>
+                                        <div class="font-weight-bold text-danger">1.398.000₫</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    <div class="d-flex justify-content-between">
+                                        <div>Mèo thần tài thiên kim × 1</div>
+                                        <div class="font-weight-bold text-danger">1.398.000₫</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="d-flex justify-content-between">
+                                        <div>Tạm tính</div>
+                                        <div class="text-danger">1.398.000₫</div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="d-flex justify-content-between">
+                                        <div>Tổng</div>
+                                        <div class="text-danger">1.398.000₫</div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    <label class="font-weight-bold"><input type="radio" name="payment" checked> Chuyển
+                                        khoản ngân hàng</label>
+                                    <div style="display: block;" class="payment-sumary">Thực hiện thanh toán vào ngay
+                                        tài khoản ngân hàng của chúng tôi. Vui lòng sử
+                                        dụng Mã đơn hàng của bạn trong phần Nội dung thanh toán. Đơn hàng sẽ đươc giao
+                                        sau khi tiền đã chuyển.</div>
+                                    <label class="font-weight-bold"><input type="radio" name="payment"> Trả tiền mặt khi
+                                        nhận hàng</label>
+                                    <div style="display: none;" class="payment-sumary">Trả tiền mặt khi giao hàng</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <button class="btn btn-danger rounded-0 font-weight-bold">ĐẶT HÀNG</button>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+
     </div>
     <!-- Footer -->
     <footer class="bg-red text-light">
