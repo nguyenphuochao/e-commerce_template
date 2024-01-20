@@ -1,4 +1,17 @@
 /* Reset css */
+span p div {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Root font-size */
+.fs-12 {
+    font-size: 12px;
+}
+
+/* Root font-weight */
+.fw-500 {
+    font-weight: 500;
+}
 
 /* Root color */
 .text-red {
@@ -112,7 +125,7 @@ nav.nav-mobile i.fa-cart-shopping {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -242,6 +255,7 @@ footer ul li a:hover {
     text-decoration: none;
 }
 
+/* Footer bottom */
 .footer-bottom {
     background-color: #212121;
     padding: 10px;
@@ -252,7 +266,7 @@ footer ul li a:hover {
     font-size: 14px;
 }
 
-/* Reponsite */
+/* Reponsive */
 @media screen and (max-width: 1199px) {
     .top-menu input[type=text] {
         width: 382px;
@@ -298,6 +312,6 @@ footer ul li a:hover {
     }
 
     .sidenav a {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
