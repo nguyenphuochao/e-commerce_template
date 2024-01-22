@@ -3,15 +3,35 @@ span p div {
     font-family: "Roboto", sans-serif;
 }
 
+/* Default text */
+.text-decoration-line-through {
+    text-decoration: line-through;
+}
+
+/* Default i */
+i.fa-angle-down,
+i.fa-angle-up,
+i.fa-circle-xmark {
+    cursor: pointer;
+}
+
 /* Root font-size */
 .fs-12 {
     font-size: 12px;
 }
-.fs-15{
+
+.fs-15 {
     font-size: 15px;
 }
-.fs-18{
+
+.fs-18 {
     font-size: 18px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-25 {
+    font-size: 25px;
 }
 /* Root font-weight */
 .fw-500 {
@@ -21,6 +41,10 @@ span p div {
 /* Root color */
 .text-red {
     color: #B22222;
+}
+
+.text-grey {
+    color: #B6B6B6;
 }
 
 .bg-red {
@@ -36,9 +60,20 @@ span p div {
     display: flex;
 }
 
+.top-menu #search_form {
+    position: relative;
+}
+
 .top-menu input[type=text] {
     width: 470px;
     height: 40px;
+}
+
+.top-menu #fa-magnifying-glass {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
 }
 
 .top-menu i.fa-phone {
@@ -113,7 +148,7 @@ nav.nav-desktop ul li.dropdown-menu-parent>ul {
     left: 20px;
     background: white;
     width: 240px;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 0px;
     display: none;
 }
@@ -130,7 +165,7 @@ nav.nav-desktop ul li.dropdown-menu-parent:hover ul {
 nav.nav-desktop ul li.dropdown-menu-parent ul li a {
     width: 100%;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 0px;
     color: rgb(75, 72, 72);
 }
@@ -341,6 +376,11 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 500px) {
+
+    .owl-carousel .owl-next span,
+    .owl-carousel .owl-prev span {
+        font-size: 40px;
+    }
 
     .list-product .title h3,
     .list-news .title h3 {

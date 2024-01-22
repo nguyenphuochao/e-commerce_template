@@ -29,24 +29,34 @@
                 <input type="text" placeholder="Tìm kiếm sản phẩm..." class="form-control">
             </form>
         </div>
-        <div class="contact-phone">
+        <div class="contact-phone fw-500">
             <i class="fa-solid fa-phone"></i> 0584228904
         </div>
         <div class="dropdown-cart">
-            <span type="button" data-toggle="dropdown" aria-expanded="false"
-                style="font-size: 12px;font-weight: 500;">GIỎ HÀNG <i class="fa-solid fa-cart-shopping"></i></span>
+            <span type="button" data-toggle="dropdown" aria-expanded="false" class="fw-500 fs-12">GIỎ HÀNG(1) <i
+                    class="fa-solid fa-cart-shopping"></i></span>
             <div class="list-cart">
                 <div class="row">
                     <!-- Start cart item -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 mt-2">
                         <img class="img-fluid"
                             src="https://naty.vn/wp-content/uploads/2021/03/meo-may-man-vay-tay-1-300x300.jpg" alt="">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 mt-2">
                         <h6>Mèo thần tài</h6>
                         <h6>1 x 699.999 đ</h6>
                     </div>
-                    <div class="col-md-2"><i class="fa-regular fa-circle-xmark"></i></div>
+                    <div class="col-md-2 mt-2"><i class="fa-regular fa-circle-xmark"></i></div>
+                    <hr class="w-100">
+                    <div class="col-md-3 mt-2">
+                        <img class="img-fluid"
+                            src="https://naty.vn/wp-content/uploads/2021/03/meo-may-man-vay-tay-1-300x300.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 mt-2">
+                        <h6>Mèo thần tài</h6>
+                        <h6>1 x 699.999 đ</h6>
+                    </div>
+                    <div class="col-md-2 mt-2"><i class="fa-regular fa-circle-xmark"></i></div>
                     <!-- End cart item -->
                     <div class="col-md-12 text-center sub-total">
                         <hr>
@@ -63,13 +73,27 @@
     </div>
     <!-- Navigation -->
     <nav class="menu bg-red nav-desktop">
-        <ul class="d-flex justify-content-center container p-2">
+        <ul class="d-flex justify-content-center container">
             <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Cầu bình an</a></li>
-            <li><a href="#">Hút may mắn</a></li>
-            <li><a href="#">Chiêu tài lộc</a></li>
-            <li><a href="#">Kiếm thức phong thủy</a></li>
-            <li><a href="#">Xem tử vi</a></li>
+            <li class="dropdown-menu-parent">
+                <a href="category.html">Cầu bình an <i class="fa-solid fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Cầu bình an 1</a></li>
+                    <li><a href="#">Cầu bình an 2</a></li>
+                    <li><a href="#">Cầu bình an 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-menu-parent">
+                <a href="category.html">Hút may mắn <i class="fa-solid fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Hút may mắn 1</a></li>
+                    <li><a href="#">Hút may mắn 2</a></li>
+                    <li><a href="#">Hút may mắn 3</a></li>
+                </ul>
+            </li>
+            <li><a href="category.html">Chiêu tài lộc</a></li>
+            <li><a href="category.html">Kiếm thức phong thủy</a></li>
+            <li><a href="category.html">Xem tử vi</a></li>
         </ul>
     </nav>
     <!-- Navigation mobile -->
@@ -78,9 +102,30 @@
             <div class="menu-mobile">
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">TRANG CHỦ</a>
-                    <a href="#">CẦU BÌNH AN</a>
-                    <a href="#">HÚT MAY MẮN</a>
+                    <a href="#"><i class="fa-solid fa-phone fs-18"></i> <span
+                            class="fs-15 fw-500">&nbsp;&nbsp;058.4228.904</span></a>
+                    <a href="#"><input type="text" placeholder="Tìm kiếm sản phẩm" class="form-control"></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">TRANG CHỦ </a>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">CẦU BÌNH AN </a>
+                        <i class="fa-solid fa-angle-down pr-3 menu-mobile-parent"></i>
+                    </div>
+                    <ul class="menu-mobile-child">
+                        <li><a href="#">CẦU BÌNH AN 1</a></li>
+                        <li><a href="#">CẦU BÌNH AN 2</a></li>
+                        <li><a href="#">CẦU BÌNH AN 3</a></li>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">HÚT MAY MẮN </a>
+                        <i class="fa-solid fa-angle-down pr-3 menu-mobile-parent"></i>
+                    </div>
+                    <ul class="menu-mobile-child">
+                        <li><a href="#">HÚT MAY MẮN 1</a></li>
+                        <li><a href="#">HÚT MAY MẮN 2</a></li>
+                        <li><a href="#">HÚT MAY MẮN 3</a></li>
+                    </ul>
                     <a href="#">CHIÊU TÀI LỘC</a>
                     <a href="#">KIẾN THỨC PHONG THỦY</a>
                     <a href="#">XEM TỬ VI</a>
@@ -89,11 +134,11 @@
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             </div>
             <div><img style="width: 200px;" src="image/logo-natyvn-meothantai.png" alt=""></div>
-            <div><i class="fa-solid fa-cart-shopping"></i></div>
+            <div><a class="text-dark" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
         </div>
     </nav>
     <!-- Cart -->
-    <div class="container mb-2 cart">
+    <div class="container mt-4 mb-2 cart">
         <div class="row">
             <div class="col-md-8">
                 <table class="table">
@@ -158,7 +203,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="checkout.html" class="btn btn-danger rounded-0 w-100">TIẾN HÀNH THANH TOÁN</a></td>
+                                <td><a href="checkout.html" class="btn btn-danger rounded-0 w-100">TIẾN HÀNH THANH
+                                        TOÁN</a></td>
                             </tr>
                         </tbody>
                     </table>
