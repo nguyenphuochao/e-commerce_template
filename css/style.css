@@ -7,7 +7,12 @@ span p div {
 .fs-12 {
     font-size: 12px;
 }
-
+.fs-15{
+    font-size: 15px;
+}
+.fs-18{
+    font-size: 18px;
+}
 /* Root font-weight */
 .fw-500 {
     font-weight: 500;
@@ -77,10 +82,13 @@ nav.nav-desktop {
     position: sticky;
     top: 0px;
     z-index: 100000;
+    margin-bottom: -16px;
+    height: 40px;
 }
 
-nav.nav-desktop ul li {
+nav.nav-desktop ul>li {
     list-style: none;
+    line-height: 40px;
 }
 
 nav.nav-desktop ul li a {
@@ -95,8 +103,36 @@ nav.nav-desktop ul li a:hover {
     color: white;
 }
 
-nav.nav-desktop {
-    margin-bottom: -16px;
+nav.nav-desktop ul li.dropdown-menu-parent {
+    position: relative;
+}
+
+nav.nav-desktop ul li.dropdown-menu-parent>ul {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    background: white;
+    width: 240px;
+    border-radius: 5px;
+    padding: 0px;
+    display: none;
+}
+
+nav.nav-desktop ul li.dropdown-menu-parent ul li {
+    border-bottom: 1px solid rgb(234, 228, 228);
+    padding: 0;
+}
+
+nav.nav-desktop ul li.dropdown-menu-parent:hover ul {
+    display: block;
+}
+
+nav.nav-desktop ul li.dropdown-menu-parent ul li a {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: rgb(75, 72, 72);
 }
 
 /* Menu mobile */
@@ -141,6 +177,15 @@ nav.nav-mobile i.fa-cart-shopping {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.nav-mobile .menu-mobile-child {
+    margin-left: -18px;
+    display: none;
+}
+
+.nav-mobile .menu-mobile-child li {
+    list-style: none;
 }
 
 /* Banner */
@@ -244,10 +289,12 @@ nav.nav-mobile i.fa-cart-shopping {
 /* Footer */
 footer ul li {
     list-style: disc;
+    margin-top: 5px;
 }
 
 footer ul li a {
     color: white;
+    font-size: 15px;
 }
 
 footer ul li a:hover {
